@@ -1,0 +1,70 @@
+
+/* el *{} se usa para aplicar el estilo a todo el estilo de la pagina web  */
+
+*{
+    margin: 0px;
+    padding: 0px; /*margen interior dentro de una caja*/
+}
+
+body{
+    background: lightgray; /*color de fondo de la pagina web*/
+    font-family: Tahoma, Geneva, Verdana, sans-serif; /*fuente de la pagina web*/
+}
+
+#container{
+    width: 100%;
+    margin: 0px auto;
+    border: 1px solid;
+}
+
+header{
+    background: rgb(0, 0, 0); /*color de fondo de cabezera*/
+    color: white; /*color del texto de cabezera*/
+    height: 100px; /*altura del fondo de cabezera (px;%)*/
+    width: 100%; /*ancho del fondo de cabezera (px;%)*/
+    text-align: center; /*alinear al centro el texto de cabezera*/
+    line-height: 50px; /*alinear verticalmente al centro el texto de cabezera*/
+    border-bottom: 3px solid white; /*borde en la parte baja de la cabezera*/
+}
+
+nav{
+    background: blanchedalmond; /*color de la barra de navegacion*/
+    height: 50px; /*altura de la barra de navegacion*/
+    line-height: 25px; /*alinear verticalmente al centro el texto de la barra de navegacion*/
+    border-bottom: 3px solid white; /*borde en la parte baja de la barra de navegacion*/
+}
+
+nav ul li{
+    float:left; /*colocar botones de navegacion uno al lado del otro*/
+    list-style: none; /*quitar estilo por defecto de botones de navegacion*/
+    margin: 10px; /*separar los botones de navegacion para que no esten tan pegados*/
+}
+
+.clearfix{
+    clear: both; /*fix para corregir que no se junten el encabezado con el cuerpo de la pagina*/
+}
+
+#content{
+    float: left;
+    width: 79.99%;
+    background: gray;
+    min-height: 800px; /*dar mas espacio a la seccion de contenido*/
+    border-right: 1px solid black;
+}
+
+aside{
+    float: left;
+    width: 19.90%;
+    background: grey;
+    min-height: 800px; /*dar mas espacio a la seccion de barra lateral*/
+    padding: auto;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 10%;
+    line-height: 50px;
+    padding: auto; /*ajustar automaticamente*/
+}
